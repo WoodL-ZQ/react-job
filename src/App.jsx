@@ -1,1 +1,15 @@
-import React from 'react'import { useRoutes } from 'react-router-dom'import { useSelector, useDispatch } from 'react-redux'import { addLoginInfo } from './store/actionCreator'import routes from './router'function App() {  const logInfo = useSelector((state) => state.loginInfo.name)  const sex = useSelector((state) => state.loginInfo.sex)  const dispatch = useDispatch()  const element = useRoutes(routes)  return (    <div>      {/* eslint-disable-next-line */}      <div onClick={() => dispatch(addLoginInfo({ name: 'WoodL', sex: 2 }))}>        {logInfo}-{sex}      </div>      <div> {element}</div>    </div>  )}export default App
+import React from 'react'
+import { useRoutes } from 'react-router-dom'
+import routes from './router'
+
+function App() {
+  const element = useRoutes(routes)
+
+  return (
+    <div>
+      <div> {element} </div>
+    </div>
+  )
+}
+
+export default App

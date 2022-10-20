@@ -1,1 +1,1 @@
-export const LOGIN_INFO = 'loginInfo'
+export const LOGIN_INFO = 'loginInfo'
