@@ -1,6 +1,7 @@
 import React from 'react'
 import LoginPage from '../pages/Login/loginPage'
 import ChooseRole from '../pages/Login/chooseRole'
+import ErrorPage from '../pages/Error/404'
 
 const routes = [
   {
@@ -10,6 +11,10 @@ const routes = [
   {
     path: '/loginPage',
     element: <LoginPage />
+  },
+  {
+    path: '*',
+    element: <ErrorPage />
   }
 ]
 
