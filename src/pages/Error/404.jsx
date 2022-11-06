@@ -12,7 +12,7 @@ function ErrorPage() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
       <img src={NotFount} alt="空白页" />
       <div className="flex justify-center mt-4">
         <Button variant="outlined" onClick={toChooseRole}>
